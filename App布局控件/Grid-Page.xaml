@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="App布局控件.Grid_Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App布局控件"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!--定义分行
+        RowDefinition   声明一行 索引从0开始
+        height  *表示平均分布 2*表示平均分配2陪  auto表示为控件高度 200固定高度
+        -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="200"/>
+        </Grid.RowDefinitions>
+        <!--定义分行
+        ColumnDefinition   声明一列 索引从0开始
+        height  *表示平均分布 2*表示平均分配2陪  auto表示为控件宽度 200固定宽度
+        -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <!--控件分配行列
+        默认为占 0行 0列
+        Grid.Row    占哪一行
+        Grid.Column 占哪一列
+        Grid.RowSpan    占几行
+        Grid.ColumnSpan 占几列
+        -->
+        <Ellipse Fill="Pink" Width="50" Height="50" Grid.Column="3"></Ellipse>
+        <Rectangle Fill="Green" Grid.Row="1"></Rectangle>
+        <Rectangle Fill="Red" Grid.Column="1"></Rectangle>
+        <Rectangle Fill="Yellow" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"></Rectangle>
+        <Rectangle Fill="Blue"  Grid.Column="4" Grid.RowSpan="4" ></Rectangle>
+    </Grid>
+</Page>

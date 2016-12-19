@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="App数据绑定_XBind.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App数据绑定_XBind"
+    RequestedTheme="Light">
+
+</Application>

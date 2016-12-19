@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="App对话框.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App对话框"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <Button Content="显示默认对话框" Name="ShowMessageButton" Click="ShowMessageButton_Click"/>
+            <TextBlock Name="msTextBlock"/>
+            <Button Content="显示自定义对话框" Name="ShowCustomerMessageButton" Click="ShowCustomerMessageButton_Click"/>
+            <TextBlock Name="CmsTextBlock"/>
+            <Button Content="显示Toast" Name="ToastButton" Click="ToastButton_Click"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>

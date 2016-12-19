@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="App布局控件.RelativePanel_Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App布局控件"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!--相对布局控件（RelativePanel）
+        相对于RelativePanel父控件
+        RelativePanel.AlignTopWithPanel 上
+        RelativePanel.AlignBottomWithPanel 下
+        RelativePanel.AlignLeftWithPanel    左
+        RelativePanel.AlignRightWithPanel   右
+        相对指定元素
+         RelativePanel.LeftOf 左
+        RelativePanel.LeftOf 左
+        -->
+        <RelativePanel>
+            <Button Content="左上" 
+                    RelativePanel.AlignTopWithPanel="True"
+                    RelativePanel.AlignLeftWithPanel="True"/>
+            
+            <Button Content="右上" 
+                    RelativePanel.AlignTopWithPanel="True"
+                    RelativePanel.AlignRightWithPanel="True"/>
+            
+            <Button Content="左下" 
+                    RelativePanel.AlignBottomWithPanel="True"
+                    RelativePanel.AlignLeftWithPanel="True"/>
+                       
+            <Button Content="取消" Name="CloceButton"
+                    RelativePanel.AlignBottomWithPanel="True"
+                    RelativePanel.AlignRightWithPanel="True"/>
+            <Button Content="确定" Margin="0,0,20,0"
+                    RelativePanel.LeftOf="CloceButton"
+                    RelativePanel.AlignBottomWithPanel="True"/>
+        </RelativePanel>
+    </Grid>
+</Page>

@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="App12.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App12"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    </Grid>-->
+    <StackPanel  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10,20,0,0">
+        <TextBlock FontSize="48" Margin="0,0,0,20">Lorem Ipsum</TextBlock>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Width="250" TextWrapping="Wrap" Margin="0,0,20,0">
+                我们将介绍在使用 C#、Visual Basic 或 C++/CX 作为编程语言并使用 XAML 进行 UI 定义时，针对 Windows 运行时应用的事件的编程概念。 你可以在 XAML 中的 UI 元素声明中为事件分配处理程序，或者在代码中添加处理程序。 Windows 运行时支持路由事件：借助此功能，某些输入事件和数据事件可由引发该事件的对象以外的对象来处理。 在定义控件模板或使用页面或版式容器时，路由事件十分有用。
+                我们将介绍在使用 C#、Visual Basic 或 C++/CX 作为编程语言并使用 XAML 进行 UI 定义时，针对 Windows 运行时应用的事件的编程概念。 你可以在 XAML 中的 UI 元素声明中为事件分配处理程序，或者在代码中添加处理程序。 Windows 运行时支持路由事件：借助此功能，某些输入事件和数据事件可由引发该事件的对象以外的对象来处理。 在定义控件模板或使用页面或版式容器时，路由事件十分有用。
+
+            </TextBlock>
+            <TextBlock Width="300" TextWrapping="Wrap"  Margin="0,0,20,0">
+                XAML 平台
+                上次更新日期: 2016/10/27
+                [ 已针对 Windows 10 上的 UWP 应用更新。 有关 Windows 8.x 文章，请参阅存档 ]
+                本部分中的主题解释了普遍适用于你编写的任何应用的编程概念（假设你使用 C#、Microsoft Visual Basic 或 Visual C++ 组件扩展 (C++/CX) 作为编程语言并使用 XAML 进行 UI 定义）。 这包括基本的编程概念（例如使用属性和事件）以及如何在通用 Windows 平台 (UWP) 应用编程中应用这些概念。 通用 Windows 平台 (UWP) 通过添加依赖属性系统，扩展了 C#、Visual Basic 或 C++/CX 属性概念以及它们的值。 本部分中的主题还介绍了 UWP 所使用的 XAML 语言，并通过介绍一些基本方案和高级主题，说明了如何使用 XAML 定义 UWP 应用的 UI。
+                XAML 平台
+                上次更新日期: 2016/10/27
+                [ 已针对 Windows 10 上的 UWP 应用更新。 有关 Windows 8.x 文章，请参阅存档 ]
+                本部分中的主题解释了普遍适用于你编写的任何应用的编程概念（假设你使用 C#、Microsoft Visual Basic 或 Visual C++ 组件扩展 (C++/CX) 作为编程语言并使用 XAML 进行 UI 定义）。 这包括基本的编程概念（例如使用属性和事件）以及如何在通用 Windows 平台 (UWP) 应用编程中应用这些概念。 通用 Windows 平台 (UWP) 通过添加依赖属性系统，扩展了 C#、Visual Basic 或 C++/CX 属性概念以及它们的值。 本部分中的主题还介绍了 UWP 所使用的 XAML 语言，并通过介绍一些基本方案和高级主题，说明了如何使用 XAML 定义 UWP 应用的 UI。
+
+            </TextBlock>
+        
+            <Rectangle Fill="Blue" Width="200" Height="200" VerticalAlignment="Top"></Rectangle>
+            <StackPanel>
+                <Rectangle Fill="Red" Width="100" Height="100"></Rectangle>
+                <Rectangle Fill="Yellow" Width="100" Height="100"></Rectangle>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Page>

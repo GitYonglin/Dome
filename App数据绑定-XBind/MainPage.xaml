@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="App数据绑定_XBind.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App数据绑定_XBind"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ListView Name="MyListView">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:UserData">
+                    <StackPanel>
+                        <TextBlock Text="{x:Bind ID}"/>
+                        <TextBox Text="{Binding Ass, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ListView Grid.Row="1" Name="MyListView1">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:UserData">
+                    <StackPanel>
+                        <TextBlock Text="{x:Bind ID}"/>
+                        <TextBlock Text="{x:Bind Ass,Mode=TwoWay}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </Grid>
+</Page>

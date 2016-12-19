@@ -1,0 +1,124 @@
+﻿<Page
+    x:Class="App13.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App13"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="500" HorizontalAlignment="Left" Margin="20,0,0,0">
+        <Grid Margin="0,0,0,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock FontSize="24">Title 1</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" TextWrapping="Wrap">
+                本部分中的主题解释了普遍适用于你编写的任何应用的编程概L 进行用编程中应用这些概念。 通用 Windows 平台 (UWP) 通过添加依赖属性系统，扩展了 C#、Visual Basic 或 C++/CX 属性概念以及它们的值。 本部分中的主题还介绍了 UWP 所使用的 XAML 语言，并通过介绍一些基本方案和高级主题，说明了如何使用 XAML 定义 UWP 应用的 UI。
+            </TextBlock>
+            <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Horizontal">
+                <Rectangle Fill="Green" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Black" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Red" Width="100" Height="30"></Rectangle>
+            </StackPanel>
+        </Grid>
+        <Grid Margin="0,0,0,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock FontSize="24">Title 2</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" TextWrapping="Wrap">
+                本部分中的主题解释了普遍适用于你编写的任何应用的编程概L 进行用编程中应用这些概念。 通用 Windows 平台 (UWP) 通过添加依赖属性系统，扩展了 C#、Visual Basic 或 C++/CX 属性概念以及它们的值。 本部分中的主题还介绍了 UWP 所使用的 XAML 语言，并通过介绍一些基本方案和高级主题，说明了如何使用 XAML 定义 UWP 应用的 UI。
+            </TextBlock>
+            <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Horizontal">
+                <Rectangle Fill="Green" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Black" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Red" Width="100" Height="30"></Rectangle>
+            </StackPanel>
+        </Grid>
+        <Grid Margin="0,0,0,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock FontSize="24">Title 3</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" TextWrapping="Wrap">
+                本部分中的主题解释了普遍适用于你编写的任何应用的编程概L 进行用编程中应用这些概念。 通用 Windows 平台 (UWP) 通过添加依赖属性系统，扩展了 C#、Visual Basic 或 C++/CX 属性概念以及它们的值。 本部分中的主题还介绍了 UWP 所使用的 XAML 语言，并通过介绍一些基本方案和高级主题，说明了如何使用 XAML 定义 UWP 应用的 UI。
+            </TextBlock>
+            <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Horizontal">
+                <Rectangle Fill="Green" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Black" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Red" Width="100" Height="30"></Rectangle>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+    <!--<StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="500" HorizontalAlignment="Left">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock FontSize="24">Title 1</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="1" TextWrapping="Wrap">
+                本部分中的主题解释了普遍适用于你编写的任何应用的编程概L 进行用编程中应用这些概念。 通用 Windows 平台 (UWP) 通过添加依赖属性系统，扩展了 C#、Visual Basic 或 C++/CX 属性概念以及它们的值。 本部分中的主题还介绍了 UWP 所使用的 XAML 语言，并通过介绍一些基本方案和高级主题，说明了如何使用 XAML 定义 UWP 应用的 UI。
+            </TextBlock>
+            <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Horizontal">
+                <Rectangle Fill="Green" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Black" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Red" Width="100" Height="30"></Rectangle>
+            </StackPanel>
+
+            <TextBlock Grid.Row="3" FontSize="24">Title 2</TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="1" TextWrapping="Wrap">
+                本部分中的主题解释了普遍适用于你编写的任何应用的编程概念（假设你使用 C#、Microsoft Visual Basic 或 Visual C++ 组件扩展 (C++/CX) 作为编程语言并使用 XAML 进行 UI 定义）。 这包括基本的编程概念（例如使用属性和事件）以及如何在通用 Windows 平台 (UWP) 应用编程中应用这些概念。 通用 Windows 平台 (UWP) 通过添加依赖属性系统，扩展了 C#、Visual Basic 或 C++/CX 属性概念以及它们的值。 本部分中的主题还介绍了 UWP 所使用的 XAML 语言，并通过介绍一些基本方案和高级主题，说明了如何使用 XAML 定义 UWP 应用的 UI。
+            </TextBlock>
+            <StackPanel Grid.Row="5" Grid.Column="2" Orientation="Horizontal">
+                <Rectangle Fill="Green" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Black" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Red" Width="100" Height="30"></Rectangle>
+            </StackPanel>
+
+            <TextBlock Grid.Row="6" FontSize="24">Title 3</TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="1" TextWrapping="Wrap">
+                本部分中的主题解释了普遍适用于你编写的任何应用的编程概念 这包括基本的编程概编程中应用这些概属性系统，扩展了 C#、Visual Basic 或 C++/CX 属性概念以及它们的值。 本部分中的主题还介绍了 UWP 所使用的 XAML 语言，并通过介绍一些基本方案和高级主题，说明了如何使用 XAML 定义 UWP 应用的 UI。
+            </TextBlock>
+            <StackPanel Grid.Row="8" Grid.Column="2" Orientation="Horizontal">
+                <Rectangle Fill="Green" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Black" Width="100" Height="30"></Rectangle>
+                <Rectangle Fill="Red" Width="100" Height="30"></Rectangle>
+            </StackPanel>
+        </Grid>
+    </StackPanel>-->
+</Page>

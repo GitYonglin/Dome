@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="App对话框.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App对话框"
+    RequestedTheme="Light">
+
+</Application>

@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="App23_汉堡菜单2.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App23_汉堡菜单2"
+    RequestedTheme="Light">
+
+</Application>

@@ -1,0 +1,78 @@
+﻿<Page
+    x:Class="App9.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App9"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="Azure">
+        <StackPanel Orientation="Horizontal" Background="RosyBrown">
+            <TextBlock Text="横向靠左"/>
+            <TextBox></TextBox>
+            <Button>横向靠左</Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Background="YellowGreen">
+            <TextBlock>横向居中</TextBlock>
+            <TextBox></TextBox>
+            <Button>横向居中</Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Background="BlueViolet">
+            <TextBlock>横向靠右</TextBlock>
+            <TextBox></TextBox>
+            <Button>横向靠右</Button>
+        </StackPanel>
+        
+        <StackPanel Background="RoyalBlue" Orientation="Vertical" >
+            <TextBlock>垂直靠左</TextBlock>
+            <Button>垂直靠左</Button>
+        </StackPanel>
+        <StackPanel Background="RosyBrown" HorizontalAlignment="Center" Orientation="Vertical" >
+            <TextBlock>垂直靠左</TextBlock>
+            <Button>垂直靠左</Button>
+        </StackPanel>
+        <StackPanel Background="SaddleBrown" HorizontalAlignment="Right" Orientation="Vertical" >
+            <TextBlock>垂直靠左</TextBlock>
+            <Button>垂直靠左</Button>
+        </StackPanel>
+        
+        <!--水平控件定位排列-->
+        <StackPanel Background="White" Orientation="Horizontal" Height="150">
+            <Button Content="AAA" Width="30" VerticalAlignment="Bottom"></Button>
+            <Button Content="BBB" Width="60" VerticalAlignment="Center"></Button>
+            <Button Content="CCC" Width="30" VerticalAlignment="Top"></Button>
+        </StackPanel>
+
+         <!--垂直控件定位排列-->
+        <StackPanel Background="Tomato" Orientation="Vertical" Width="200">
+            <Button Content="AAA" Width="30" HorizontalAlignment="Left"></Button>
+            <Button Content="BBB" Width="60" HorizontalAlignment="Center"></Button>
+            <Button Content="CCC" Width="30" HorizontalAlignment="Right"></Button>
+        </StackPanel>
+         
+        <StackPanel Orientation="Horizontal" Background="Red" HorizontalAlignment="Left">
+            <StackPanel>
+                <Button>按钮垂直</Button>
+                <Button>按钮垂直</Button>  
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal">
+                <Button>横向</Button>
+                <Button>横向</Button>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Background="FloralWhite">
+            <StackPanel Orientation="Horizontal">
+                <Button>按钮垂直</Button>
+                <Button>按钮垂直</Button>
+                
+            </StackPanel>
+        <StackPanel HorizontalAlignment="Center" >
+                    <Button>横向</Button>
+                    <Button>横向</Button>
+                </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Page>

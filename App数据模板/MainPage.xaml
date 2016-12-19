@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="App数据模板.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App数据模板"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <!--创建数据显示模板-->
+        <DataTemplate x:Key="ShowT">
+            <StackPanel>
+                <TextBlock FontWeight="Bold" Text="{Binding Name}" FontSize="24"/>
+                <TextBlock Text="{Binding Date}" />
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate x:Key="HeidTmp">
+            <TextBlock>隐藏信息</TextBlock>
+        </DataTemplate>
+        <!--使用定义了来选择模板-->
+        <local:MySelecttor x:Key="sel" ShowTmp="{StaticResource ShowT}" HideTmp="{StaticResource HeidTmp}"/>
+
+
+    </Page.Resources>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--直接使用模板-->
+        <ListView Name="MyListView" ItemTemplate="{StaticResource ShowT}"/>
+        <!--通过自定义类选择模板-->
+        <ListView Name="MyListView2" ItemTemplateSelector="{StaticResource sel}"/>
+        
+        
+    </Grid>
+</Page>
